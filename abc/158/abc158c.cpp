@@ -5,16 +5,15 @@ using namespace std;
  
 int main(){
     double a, b;
-    double xa;
-    int xb;
-    int ans = 0;
+    double xa, xb;
+    int ans = -1;
 	cin>>a>>b;
-    xa = a/0.08;
-    xb = xa * 0.1;
-    if (xb== b){
-        ans = (int)xa;
-    }else{
-        ans = -1;
+    for (int i = 100; i > 0; i--){
+        if ((int)(i*0.08) == a){
+            if ((int)(i*0.1) == b){
+                ans = i;
+            }
+        }
     }
 	cout<<ans<<endl;
 }
