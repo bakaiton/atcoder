@@ -4,8 +4,8 @@
 using namespace std;
  
 int main(){
-    int n, a, b;
-    int ans = 0;
+    long n, a, b;
+    long ans = 0;
 	cin>>n>>a>>b;
     ans = (n/(a+b))*a;
     if (n%(a+b) - a < 0){
